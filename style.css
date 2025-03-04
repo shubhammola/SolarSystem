@@ -1,0 +1,307 @@
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
+  height: 200vmin;
+  overflow: hidden;
+}
+
+.object {
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY( 50vmin );
+}
+
+.welcome-message {
+  text-align: center;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.welcome-message h1 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.welcome-message p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.header-info {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-size: 14px;
+  text-align: right;
+  max-width: 200px;
+}
+
+.header-info div {
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.p-orbit, #m-orbit{
+  border: 0.1vmin solid lightgrey;
+  opacity: 0.5;
+  background: transparent;
+}
+
+#belt {
+  height: 60vmin;
+  width: 60vmin;
+  animation: spin 50s infinite linear;
+  margin-top: 30vmin;
+}
+
+/* Media queries for small screens */
+@media screen and (max-width: 600px) {
+  #belt {
+    height: 40vmin;
+    width: 40vmin;
+    margin-top: 120vmin;
+  }
+}
+
+/* Media queries for landscape orientation on small screens */
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  #belt {
+    height: 30vmin;
+    width: 30vmin;
+    margin-top: 15vmin;
+  }
+}
+
+/* Media queries for medium screens */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  #belt {
+    height: 80vmin;
+    width: 80vmin;
+    margin-top: 85vmin;
+  }
+}
+
+/* Media queries for landscape orientation on medium screens */
+@media screen and (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
+  #belt {
+    height: 60vmin;
+    width: 60vmin;
+    margin-top: 30vmin;
+  }
+}
+
+/* Media queries for large screens */
+@media screen and (min-width: 1025px) {
+  #belt {
+    height: 97vmin;
+    width: 97vmin;
+    margin-top: 60vmin;
+  }
+}
+
+@keyframes spin{
+  0%{ transform: rotate(0deg) }
+  100%{ transform: rotate(360deg) }
+}
+
+#m-orbit {
+  height: 8vmin;
+  width: 8vmin;
+}
+
+.planet, #moon {
+  z-index: 100;
+}
+
+#sun {
+  height: 12vmin;
+  width: 12vmin;
+}
+
+#moon {
+  height: 1vmin;
+  width: 1vmin;
+  background-color: white;
+}
+
+#mercury {
+  height: 2vmin;
+  width: 2vmin;
+}
+
+#venus {
+  height: 3vmin;
+  width: 3vmin;
+}
+
+#earth {
+  height: 4vmin;
+  width: 4vmin;
+}
+
+#mars {
+  height: 3.5vmin;
+  width: 3.5vmin;
+}
+
+#jupiter {
+  height: 12vmin;
+  width: 12vmin;
+}
+
+#saturn {
+  height: 12vmin;
+  width: 12vmin;
+  border-radius: 0%;
+}
+
+#uranus {
+  height: 5vmin;
+  width: 5vmin;
+}
+
+#neptune {
+  height: 4vmin;
+  width: 4vmin;
+}
+
+.planet-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.planet-button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.planet-button:hover {
+  opacity: 0.8;
+}
+
+/* Media queries for small screens */
+@media screen and (max-width: 600px) {
+  .planet-buttons {
+    flex-direction: column;
+  }
+
+  .planet-button {
+    padding: 10px 15px;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+
+  .header-info {
+    position: relative;
+    max-width: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Media queries for medium screens */
+@media screen and (min-width: 601px) and (max-width: 1204px) {
+  .planet-button {
+    font-size: 14px;
+  }
+
+  .header-info {
+    position: relative;
+    max-width: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Media queries for large screens */
+@media screen and (min-width: 1025px) {
+  .planet-button {
+    font-size: 16px;
+  }
+}
+
+.mercury-button { background-color: #d4d2cd; color: #000; }
+.venus-button { background-color: #d5a775; color: #fff; }
+.earth-button { background-color: #4d85bd; color: #fff; }
+.mars-button { background-color: #c64536; color: #fff; }
+.jupiter-button { background-color: #d5a070; color: #fff; }
+.saturn-button { background-color: #e1d09d; color: #000; }
+.uranus-button { background-color: #b0d7ed; color: #000; }
+.neptune-button { background-color: #5889c4; color: #fff; }
+
+
+#planet-image-container {
+  max-width: 200px;
+  margin: 10px auto;
+}
+
+#planet-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#planet-info {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  position: fixed;
+  top: 15%;
+  right: 0px;
+  display: none;
+  z-index: 100;
+}
+
+#close-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#close-button:hover {
+  background-color: #c0392b;
+}
+
+@media screen and (max-width: 600px) {
+
+  #planet-info {
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #close-button {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1204px) {
+  #planet-info {
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #close-button {
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZEJoxp5GQz3uX4Xipp8WYj" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZEJoxp5GQz3uX4Xipp8WYj" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <title>Sauramandala == Solar System</title>
+  <meta name="description" content="Explore the wonders of our solar system! Learn fascinating facts about the Sun, planets like Earth, Mars, and Jupiter, and discover the mysteries of the asteroid belt. Dive into a captivating journey through space, featuring interactive information about each celestial body. Welcome to a virtual tour of the solar system, where science meets curiosity and awe.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="planet-buttons" id="planet-buttons">
+    <button class="planet-button  mercury-button" data-planet="mercury">Mercury</button>
+    <button class="planet-button venus-button" data-planet="venus">Venus</button>
+    <button class="planet-button earth-button" data-planet="earth">Earth</button>
+    <button class="planet-button mars-button" data-planet="mars">Mars</button>
+    <button class="planet-button jupiter-button" data-planet="jupiter">Jupiter</button>
+    <button class="planet-button saturn-button" data-planet="saturn">Saturn</button>
+    <button class="planet-button uranus-button" data-planet="uranus">Uranus</button>
+    <button class="planet-button neptune-button" data-planet="neptune">Neptune</button>
+  </div>
+
+  <div class="welcome-message">
+    <h1>Welcome to the Solar System!</h1>
+    <p>Explore the wonders of our solar system with interactive planets and an asteroid belt. Click on the planets to learn more!</p>
+  </div>
+
+  <div class="header-info" id="header-info">
+    <div id="time"></div>
+    <div id="date"></div>
+  </div>
+
+  <img class="object" src="img/sun.png" alt="" id="sun">
+  <img class="object planet" src="img/mercury.png" alt="" id="mercury">
+  <img class="object planet" src="img/venus.png" alt="" id="venus">
+  <img class="object planet" src="img/earth.png" alt="" id="earth">
+  <img class="object planet" src="img/mars.png" alt="" id="mars">
+  <img class="object planet" src="img/jupiter.png" alt="" id="jupiter">
+  <img class="object planet" src="img/saturn.png" alt="" id="saturn">
+  <img class="object planet" src="img/uranus.png" alt="" id="uranus">
+  <img class="object planet" src="img/neptune.png" alt="" id="neptune">
+  <div class="object" id="moon"></div>
+
+  <div class="planet-info" id="planet-info">
+    <h3 id="planet-name"></h3>
+    <p><strong></strong> <span id="planet-speed"></span></p>
+    <p><strong></strong> <span id="planet-time"></span></p>
+    <div id="planet-image-container">
+    <img id="planet-image" alt="Planet Image"></div>
+    <button id="close-button" onclick="hidePlanetInfo()">Close</button>
+  </div>
+
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object" id="m-orbit"></div>
+
+  <img src="img/asteroid.png" class="object" alt="" id="belt">
+
+  <script src="script.js"></script>
+</body>
+</html>
