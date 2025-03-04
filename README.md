@@ -10,10 +10,12 @@ Features:
 ✅ Smooth animations and orbits
 ✅ Responsive design with Bootstrap
 
+```
 Tech Stack:
 • HTML, CSS, JavaScript
 • Bootstrap for styling
 • jQuery for interactivity
+```
 
 How to Run:
 1. Clone the repository: git clone https://github.com/your-username/SolarSystem.git
