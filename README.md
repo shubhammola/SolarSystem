@@ -11,6 +11,13 @@ Features:
 ✅ Responsive design with Bootstrap
 
 Tech Stack:
-	•	HTML, CSS, JavaScript
-	•	Bootstrap for styling
-	•	jQuery for interactivity
+• HTML, CSS, JavaScript
+• Bootstrap for styling
+• jQuery for interactivity
+
+How to Run:
+1. Clone the repository: git clone https://github.com/your-username/SolarSystem.git
+2. Open index.html in a browser.
+3. Explore the wonders of the universe! 🌌
+
+[Live Demo](https://sauramandala.netlify.app)
