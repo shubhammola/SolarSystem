@@ -19,7 +19,7 @@ Tech Stack:
 
 How to Run:
 1. Clone the repository: `git clone https://github.com/your-username/SolarSystem.git`
-2. Open `index.html` file on VS Code then Right-click on index.html and select “Open with Live Server”.
+2. Open `index.html` file on VS Code then Right-click on `index.html` and select `Open with Live Server`.
 3. Explore the wonders of the universe! 🌌
 
 [Live Demo](https://sauramandala.netlify.app)
