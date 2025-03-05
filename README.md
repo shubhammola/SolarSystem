@@ -23,4 +23,4 @@ How to Run:
 3. Alternative: Open Manually in a Browser → Locate the `index.html` file in your project folder → Right-click on it and choose `Open With` → `Google Chrome (or any browser)`
 4. Explore the wonders of the universe! 🌌
 
-[Live Demo](https://sauramandala.netlify.app)
+## [Live Demo](https://sauramandala.netlify.app)
